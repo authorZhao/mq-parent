@@ -8,8 +8,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 
-@Component
-@TopicName("topic22")
+@Service
+@TopicName(value="topic22")
 public class TopicService2 implements TopicComsumerMsg {
 
     @Override

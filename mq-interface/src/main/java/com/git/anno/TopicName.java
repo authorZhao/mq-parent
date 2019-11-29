@@ -14,5 +14,6 @@ import java.lang.annotation.Target;
 @Retention(value = RetentionPolicy.RUNTIME)
 @Component
 public @interface TopicName {
-	public String value();
+	public String value() default "";
+	String name() default "";
 }
