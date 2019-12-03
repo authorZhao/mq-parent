@@ -78,7 +78,7 @@ public class MgListener implements ApplicationListener<ContextRefreshedEvent> {
         String queueBeanName = "";
         TopicName anQueueName = (TopicName) AnnotationUtil.getAnnotation(topicComsumerMsg, TopicName.class);
         if(anQueueName==null)throw new RuntimeException("获取不到注解："+anQueueName.getClass().getName());
-        queueBeanName = anQueueName.name();
+        queueBeanName = anQueueName.value();
 
         Connection conn = cachingConnectionFactory.createConnection();
         Session session = conn.createSession(false, 1);

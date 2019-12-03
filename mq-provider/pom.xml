@@ -11,12 +11,33 @@
 
     <artifactId>mq-provider</artifactId>
 
+    <properties>
+        <tomcat.version>8.5.5</tomcat.version>
+
+    </properties>
     <dependencies>
         <dependency>
             <groupId>com.git</groupId>
             <artifactId>mq-interface</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <version>${tomcat.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-el</artifactId>
+            <version>${tomcat.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-jasper</artifactId>
+            <version>${tomcat.version}</version>
+        </dependency>
+
     </dependencies>
 
 </project>

@@ -1,4 +1,3 @@
-/*
 package com.git.config;
 
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -13,4 +12,4 @@ public class WebMvcConfig implements WebMvcConfigurer {
         registry.jsp();
     }
 }
-*/
+

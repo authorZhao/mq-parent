@@ -1,4 +1,4 @@
-/*
+
 package com.git.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
@@ -19,4 +19,4 @@ public class RootConfig extends AbstractAnnotationConfigDispatcherServletInitial
     protected String[] getServletMappings() {
         return new String[] { "/" };
     }
-}*/
+}

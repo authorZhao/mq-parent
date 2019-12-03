@@ -6,13 +6,16 @@ import com.git.model.dto.MqMsgDto;
 import org.apache.activemq.command.ActiveMQQueue;
 import org.apache.activemq.command.ActiveMQTopic;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Required;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Service;
 
 import javax.jms.Destination;
 @Service
 public class SengMsgImpl implements SendMsg {
+
     @Autowired
+
     private JmsTemplate activeMqJmsTemplate;
 
     @Override

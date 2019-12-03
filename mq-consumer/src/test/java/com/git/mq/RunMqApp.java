@@ -1,6 +1,7 @@
 package com.git.mq;
 
 import com.git.config.MqConfig;
+import com.git.config.MqConfig2;
 import com.git.inter.SendMsg;
 import com.git.model.dto.MqMsgDto;
 import org.slf4j.Logger;
@@ -14,7 +15,7 @@ public class RunMqApp {
     private static final Logger logger = LoggerFactory.getLogger(RunMqApp.class);
 
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MqConfig.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MqConfig2.class);
         context.start();
         logger.info("项目启动成功");
         MqMsgDto mqMsgDto = new MqMsgDto();
@@ -24,4 +25,16 @@ public class RunMqApp {
         }
 
     }
+
+    /*public static void main(String[] args) {
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MqConfig.class);
+        context.start();
+        logger.info("项目启动成功");
+        MqMsgDto mqMsgDto = new MqMsgDto();
+        mqMsgDto.setContent("测试");
+        int i = 1;
+        while (true){
+        }
+
+    }*/
 }
